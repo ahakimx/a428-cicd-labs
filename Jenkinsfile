@@ -20,7 +20,9 @@ pipeline {
 	
 	stage('Manual Approval') {
 	    steps {
-		input message: 'Lanjutkan ke tahap Deploy"'
+		input message: 'Lanjutkan ke tahap Deploy'
+	    }
+	}
 
 	stage('Deploy') {
             steps {
